@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background: rgb(147, 220, 254);
+}
+
+/* navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky {
+    padding: 15px 0;
+    background: rgb(20, 157, 230);
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 30px;
+    text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+}
+.navbar .menu li a:hover {
+    color: rgb(20, 157, 230);
+    cursor: pointer;
+}
+.navbar.sticky .menu li a:hover {
+    color: #fff;
+}
+
+
+/* data list styling */
+
+#pages .text1 {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-top: 10px;
+    color: #000;
+}
+
+#data-list-container {
+    max-width: 600px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: justify;
+    background: rgb(125, 209, 254);
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 170px;
+    margin-left: 70px;
+    border-radius: 6px;
+    border: 2px solid rgb(20, 157, 230);
+    transition: all 0.3s ease;
+    float: left;
+}
+tr:nth-child(even) {
+    color: #111;
+}
+td {
+    padding: 10px 40px;
+}
+.value, .time {
+    color: #111;
+    width: 50%;
+    height: 60px;
+    margin: 0;
+    padding: 20px;
+    display: inline;
+}
+.value {
+    margin-left: 205px;
+}
+.time {
+    margin-left: 20px;
+}
+
+/* chart styling */
+.chart {
+    max-width: 600px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    margin-left: 25px;
+    margin-top: 170px;
+    background: rgb(125, 209, 254);
+    color: #111;
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: 2px solid rgb(20, 157, 230);
+    transition: all 0.3s ease;
+    float: left;
+}
+
+/* timescale selector styling */
+#timeSpan {
+max-width: 130px;
+width: 100%;
+max-height: 100px;
+height: 100%;
+margin-left: 25px;
+margin-top: 170px;
+background: rgb(125, 209, 254);
+color: #111;
+padding: 10px 30px;
+border-radius: 6px;
+border: 2px solid rgb(20, 157, 230);
+transition: all 0.3s ease;
+float: left;
+}
+#timeSpanselector {
+    margin-top: 5px;
+}

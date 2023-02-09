@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wind Speed</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Sääasema</a></div>
+            <ul class="menu">
+                <li><a href="./index.html" class="menu-btn">Viimeiset arvot</a></li>
+                <li><a href="./lämpö.html" class="menu-btn">Lämpötila</a></li>
+                <li><a href="./tuuli.html" class="menu-btn">Tuulen nopeus</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="data-section" id="data-section">
+        <div id="pages">
+            <div id="data-list-container">
+                <div class="text1">Tuulen nopeus</div>
+                <h3 class="time">Aika:</h3><h3 class="value">Arvo:</h3>
+                <table id="collectors">
+
+                </table>
+            </div>
+        </div>
+        <div id="timeSpan">
+            <h3>Tulosten aikaväli: </h3>
+            <select id="timeSpanselector" onchange="update()">
+                <option value="">LIVE</option>
+                <option value="24">24h</option>
+                <option value="48">48h</option>
+                <option value="72">72h</option>
+                <option value="168">1vko</option>
+                <option value="730">1kk</option>
+            </select>
+        </div>
+
+        <div class="chart">
+            <canvas id="tuuliChart"></canvas>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+            integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+            </script>
+        </div>
+    </div>
+
+    <script src="tuuli.js"></script>
+</body>
+</html>

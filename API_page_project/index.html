@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Project</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Sääasema</a></div>
+            <ul class="menu">
+                <li><a href="./index.html" class="menu-btn">Viimeiset arvot</a></li>
+                <li><a href="./lämpö.html" class="menu-btn">Lämpötila</a></li>
+                <li><a href="./tuuli.html" class="menu-btn">Tuulen nopeus</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="data-section" id="data-section">
+        <div id="pages">
+            <div id="data-list-container">
+                <div class="text1">Viimeiset 50 arvoa</div>
+                <h3 class="time">Aika:</h3><h3 class="value">Arvo:</h3>
+                <table id="collectors">
+
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
